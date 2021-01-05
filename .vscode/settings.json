@@ -9,6 +9,7 @@
         "commitlint.config.js": true,
         "README.md": true,
         "yarn.lock": true,
-
+        ".eslintcache": true,
+        "debug.log": true,
     }
 }

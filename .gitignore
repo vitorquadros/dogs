@@ -3,7 +3,7 @@
 debug.log
 .eslintcache
 commitlint.config.js
-
+.vscode
 
 # dependencies
 /node_modules

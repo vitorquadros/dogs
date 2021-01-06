@@ -9,6 +9,11 @@ const useForm = (type) => {
       regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
       message: "Preencha um email valido.",
     },
+    password: {
+      regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
+      message:
+        "A senha precisa ter pelo menos uma letra maiuscula, uma minuscula, um digito, e pelo menos 8 caracteres.",
+    },
   };
 
   function validate(value) {

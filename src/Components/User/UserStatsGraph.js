@@ -14,8 +14,10 @@ const UserStatsGraph = ({ data }) => {
       };
     });
 
+    console.log(data);
+
     setTotal(
-      data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b)
+      data.map(({ item }) => Number(item.acessos)).reduce((a, b) => a + b)
     );
 
     setGraph(graphData);
